@@ -21,6 +21,18 @@ $(call inherit-product, device/xiaomi/breeze/device.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/breeze/breeze-vendor.mk)
 
+# Lunaris
+LUNARIS_BUILD_TYPE := UNOFFICIAL
+WITH_GMS := true
+TARGET_SUPPORTS_GOOGLE_TELEPHONY := true
+SURFACE_FLINGER_BOOST := true
+WITH_BCR := true
+TARGET_ENABLE_BLUR := true
+USE_REALITY_ENGINE := true
+TARGET_USE_MAPS := true
+TARGET_USE_FILES := true
+SURFACE_FLINGER_BOOST := true
+
 ## Device identifier
 PRODUCT_DEVICE := breeze
 PRODUCT_NAME := lineage_breeze

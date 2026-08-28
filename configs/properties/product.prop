@@ -25,4 +25,4 @@ remote_provisioning.hostname=remoteprovisioning.googleapis.com
 remote_provisioning.strongbox.rkp_only=true
 
 # Maintainer
-ro.lunaris.maintainer=XEN
+ro.lunaris.maintainer=Xen

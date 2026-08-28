@@ -18,5 +18,5 @@
     <string name="lunaris_device_message">Redmi 13 5G/POCO M6 Plus 5G</string>
     <string name="lunaris_processor_code_message">Snapdragon® 4 Gen 2AE</string>
     <string name="lunaris_battery_type_message">5030 mAh</string>
-    <string name="lunaris_screen_message">IPS-LCD-120hz</string>
+    <string name="lunaris_screen_message">IPS LCD 120hz</string>
 </resources>
