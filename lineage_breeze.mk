@@ -10,6 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Configure full_base_telephony.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+TARGET_DISABLE_EPPE := true
 # Inherit common lineage configurations
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
@@ -36,3 +37,33 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Use blur 
+TARGET_ENABLE_BLUR := true 
+
+# AX-FX instead of dolby or viper 
+TARGET_INCLUDE_AXFX := true
+
+# Camera information 
+AXION_CAMERA_REAR_INFO := 108,2
+AXION_CAMERA_FRONT_INFO := 13
+
+# Maintainer name (underscores become spaces in the UI)
+AXION_MAINTAINER := Xen
+
+# Processor name (underscores become spaces)
+AXION_PROCESSOR := Snapdragon_4_Gen_2_AE
+
+BYPASS_CHARGE_SUPPORTED ?= false
+
+# High Brightness Mode (HBM)
+HBM_SUPPORTED := true 
+
+# doze fix
+# for devices with doze/sensor related issues 
+TARGET_NEEDS_DOZE_FIX := true
+
+TARGET_INCLUDES_LOS_PREBUILTS := false
+
+# Refresh Rate
+TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
