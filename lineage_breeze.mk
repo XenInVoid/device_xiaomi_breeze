@@ -38,32 +38,22 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Use blur 
-TARGET_ENABLE_BLUR := true 
-
-# AX-FX instead of dolby or viper 
-TARGET_INCLUDE_AXFX := true
-
-# Camera information 
+# Axion Stuff
+TARGET_ENABLE_BLUR := true
 AXION_CAMERA_REAR_INFO := 108,2
 AXION_CAMERA_FRONT_INFO := 13
-
-# Maintainer name (underscores become spaces in the UI)
 AXION_MAINTAINER := Xen
-
-# Processor name (underscores become spaces)
 AXION_PROCESSOR := Snapdragon_4_Gen_2_AE
 
-BYPASS_CHARGE_SUPPORTED ?= false
+# Enable or disable ScrollOptimizer globally
+persist.sys.perf.scroll_opt = true
 
-# High Brightness Mode (HBM)
-HBM_SUPPORTED := true 
+# Heavy app handling mode
+# 0 - Disable heavy app classification
+# 1 - Enable dynamic detection (based on frame duration and buffer load)
+# 2 - Treat all apps as heavy for performance
+persist.sys.perf.scroll_opt.heavy_app = 2
 
-# doze fix
-# for devices with doze/sensor related issues 
-TARGET_NEEDS_DOZE_FIX := true
+TARGET_INCLUDE_AXFX := false
 
 TARGET_INCLUDES_LOS_PREBUILTS := false
-
-# Refresh Rate
-TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
