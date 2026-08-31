@@ -54,6 +54,6 @@ persist.sys.perf.scroll_opt = true
 # 2 - Treat all apps as heavy for performance
 persist.sys.perf.scroll_opt.heavy_app = 2
 
-TARGET_INCLUDE_AXFX := false
+TARGET_INCLUDE_AXFX := true
 
 TARGET_INCLUDES_LOS_PREBUILTS := false
