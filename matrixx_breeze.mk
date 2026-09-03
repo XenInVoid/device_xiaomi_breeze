@@ -10,10 +10,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Configure full_base_telephony.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit common lineage configurations
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit common matrixx configurations
+$(call inherit-product, vendor/matrixx/config/common_full_phone.mk)
 
-$(call inherit-product, vendor/lineage/config/BoardConfigReservedSize.mk)
+$(call inherit-product, vendor/matrixx/config/BoardConfigReservedSize.mk)
 
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/breeze/device.mk)
@@ -23,7 +23,7 @@ $(call inherit-product, vendor/xiaomi/breeze/breeze-vendor.mk)
 
 ## Device identifier
 PRODUCT_DEVICE := breeze
-PRODUCT_NAME := lineage_breeze
+PRODUCT_NAME := matrixx_breeze
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 24066PC95I
 PRODUCT_MANUFACTURER := Xiaomi
@@ -36,3 +36,16 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Matrixx Flags
+MATRIXX_MAINTAINER := Xen
+TARGET_INCLUDE_MATLOG := true
+TARGET_CUSTOM_UDFPS := false
+WITH_GMS := false
+BYPASS_CHARGE_SUPPORTED := true
+TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
+WITH_BCR := true
+TARGET_OPTIMIZED_DEXOPT := true
+PRODUCT_NO_CAMERA := false
+USE_REALITY_ENGINE := false
+HBM_SUPPORTED := false
