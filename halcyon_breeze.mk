@@ -10,10 +10,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Configure full_base_telephony.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit common lineage configurations
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit common halcyon configurations
+$(call inherit-product, vendor/halcyon/config/common_full_phone.mk)
 
-$(call inherit-product, vendor/lineage/config/BoardConfigReservedSize.mk)
+$(call inherit-product, vendor/halcyon/config/BoardConfigReservedSize.mk)
 
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/breeze/device.mk)
