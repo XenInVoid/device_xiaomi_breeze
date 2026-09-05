@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_breeze.mk
+    $(LOCAL_DIR)/halcyon_breeze.mk
