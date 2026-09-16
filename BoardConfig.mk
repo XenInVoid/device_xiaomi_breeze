@@ -215,12 +215,12 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
 DEVICE_MANIFEST_SKUS := ravelin
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_MANIFEST_RAVELIN_FILES := \
-    $(DEVICE_PATH)/configs/vintf/manifest_ravelin.xml
+    $(DEVICE_PATH)/configs/vintf/manifest_ravelin.xml \
+    $(DEVICE_PATH)/hidl/c2_manifest_vendor.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/framework_manifest.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hidl/c2_manifest_vendor.xml
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
