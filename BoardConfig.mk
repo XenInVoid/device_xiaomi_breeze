@@ -7,6 +7,9 @@
 # Inherit from the proprietary version
 -include vendor/xiaomi/breeze/BoardConfigVendor.mk
 
+# Inherit from MiuiCamera
+-include device/xiaomi/breeze-miuicamera/BoardConfig.mk
+
 DEVICE_PATH := device/xiaomi/breeze
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 

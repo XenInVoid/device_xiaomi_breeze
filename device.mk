@@ -19,6 +19,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Call the proprietary setup.
 $(call inherit-product, vendor/xiaomi/breeze/breeze-vendor.mk)
 
+# Vendor MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/breeze-miuicamera/device.mk)
+
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
